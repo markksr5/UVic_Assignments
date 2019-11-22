@@ -1,0 +1,26 @@
+a2 pseudo pseudo code
+
+build empty trees for prims and kruskals
+add edge prim
+add edge kruskal
+check cycle prim
+check cycle kruskal
+continue if no cycle
+
+how to check cycle
+add the kruskal edge to prims tree and check if cycle
+	check cycle:
+	the added node MUST be the node that completes a cycle if the trees are different
+	thus depth first search idea:
+	u = either, v = other
+	traverse through the nodes connected to v
+	if x.other == u, then cycle
+	if x doesn't lead anywhere for all x and x.other != u for any x, then no cycle found
+vice versa (do we need this? i think so, at the very least we need to add the kruskal edge to the prim tree, since it is more
+likely to have cycles?)
+
+functions
+add edge prim
+add edge kruskal
+check cycle prim (kruskal edge)
+check cycle kruskal (prim edge)

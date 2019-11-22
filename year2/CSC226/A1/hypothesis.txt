@@ -1,0 +1,30 @@
+When running 100 trials of the tests for n distinct random integers, with n = 10^4, 10^5, 10^6, these were the results found:
+
+n = 10^4:
+Percentage	Occurrences
+21		1
+22		18
+23		51
+24		29
+25		1
+
+
+n = 10^5:
+Percentage	Occurrences
+23		97
+24		3
+
+
+n = 10^6:
+Percentage	Occurrences
+23		100
+
+
+Based on the results found as n increases, the expected percentage of red nodes in any red black tree is about 23%, with the percentage approaching 23% as n increases.
+This is due to the observations:
+	1) There are no two consecutive red nodes
+		For any path from root to leaf, there can only be a maximum of 50% red nodes.
+	2) There are no right leaning red links
+		Since a red black tree is always complete (relative to black nodes), at least 50% of the nodes are black.
+Due to this, it can be expected that there are no more than 25% red nodes in any given red black tree.  
+This likely converges to a lower number because it is unlikely for red nodes to occupy ALL possible spots that red nodes can occupy.
