@@ -1,0 +1,3 @@
+# Course Description
+## Requirements Engineering
+Combines a range of topics integral to the analysis of requirements, design, implementation, and testing of a medium-scale software system with the practical experience of implementing such a project as a member of a software engineering team. Introduces requirements engineering, specifications, software life cycle models and methods for requirements engineering.
